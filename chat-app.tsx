@@ -78,7 +78,7 @@ export default function Home() {
                 <span className="text-2xl">💬</span> WebSocket Chat
               </span>
             </CardTitle>
-            <Badge  className="px-2 py-1">
+            <Badge variant={isConnected ? "success" : "destructive"} className="px-2 py-1">
               {isConnected ? "Connected" : "Disconnected"}
             </Badge>
           </div>
